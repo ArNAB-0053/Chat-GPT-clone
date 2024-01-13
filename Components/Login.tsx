@@ -13,7 +13,7 @@ const Login = () => {
         alt="ChatGPT"
         className="aspect-square w-16 h-16"
       />
-      <button onClick={()=> signIn("google")} className="text-white text-3xl">Sign In to continee</button>
+      <button onClick={()=> signIn("google")} className="text-white text-3xl font-semibold ">Sign In to continue</button>
     </div>
   );
 };
