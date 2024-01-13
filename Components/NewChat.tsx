@@ -11,7 +11,7 @@ const NewChat = () => {
    const createNewChat =async () => {
       const doc = await addDoc(
         collection(db, "users", session?.user?.email!, "chats"), {
-          messages: [],
+          // messages: [],
           userId: session?.user?.email!,
           createAt: serverTimestamp()
         }
@@ -22,7 +22,7 @@ const NewChat = () => {
 
 
   return (
-    <button onClick={createNewChat} className="hover flex items-center justify-start gap-2 px-2 py-2 w-full">
+    <button onClick={createNewChat} className="hover flex items-center justify-start gap-2 px-2 py-2 w-full mb-6 hover:text-white">
       <span className="w-7 h-7 flex items-center justify-center bg-white rounded-full">
         <Image
           src="/Images/chatgpt.svg"
@@ -32,7 +32,7 @@ const NewChat = () => {
           className="aspect-square "
         />
       </span>
-      <h2 className="text-black dark:text-white text-md font-bold">New Chat</h2>
+      <h2 className="text-md font-bold dark:text-white text-black">New Chat</h2>
     </button>
   );
 };

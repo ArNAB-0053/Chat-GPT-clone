@@ -13,17 +13,17 @@ const ThemeChanger = () => {
 
   return (
     <ThemeProvider attribute="class">
-      <div className="relative">
+      <div className="relative w-full">
         {theme === "dark" && (
-          <button className="modeBtn hover" onClick={() => setTheme("light")}>
+          <button className="modeBtn w-full" onClick={() => setTheme("light")}>
             <SunIcon className="text-[#fff000] h-6 w-6" />
-            Light
+            Light Mode
           </button>
         )}
         {theme === "light" && (
-          <button className="modeBtn hover" onClick={() => setTheme("dark")}>
-            <MoonIcon className="h-6 w-6 text-[#1c1c1c]" />
-            Dark
+          <button className="modeBtn w-full" onClick={() => setTheme("dark")}>
+            <MoonIcon className="h-6 w-6 text-white" />
+            Dark Mode
           </button>
         )}
       </div>

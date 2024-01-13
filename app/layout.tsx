@@ -24,7 +24,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${inter.className} `}>
+      <body className={`${inter.className} overflow-x-hidden scrollbar-thin scrollbar-thumb-zinc-500 scrollbar-track-gray-300 dark:scrollbar-thumb-gray-400 dark:scrollbar-track-gray-600 `}>
         <SessionProvider session={session}>
           {!session ? (
             <Login />

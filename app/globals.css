@@ -5,10 +5,31 @@
 
 @layer components {
   .modeBtn {
-    @apply flex items-center justify-center gap-3
+    @apply flex items-center justify-start gap-3 px-6 py-2
   }
 
   .hover {
-    @apply hover:bg-gray-400 dark:hover:bg-[#2e2e2e] px-2 py-2 w-[15rem] rounded-lg
+    @apply hover:bg-[#685CFE] dark:hover:bg-[#202123] rounded-lg
+  }
+
+  .chatStyle {
+    @apply bg-gray-100 dark:bg-[#343541] w-screen md:w-[calc(100vw-16rem)] flex items-center justify-center flex-col
+  }
+
+  .scrollbarStyle {
+    @apply overflow-x-hidden overflow-y-auto scrollbar-thin scrollbar-thumb-transparent dark:scrollbar-thumb-transparent scrollbar-track-rounded-full scrollbar-thumb-rounded-full hover:scrollbar-thumb-gray-400 dark:hover:scrollbar-thumb-zinc-700
+  }
+
+  .trans {
+    @apply transition-all ease-linear duration-[0.3s]
   }
 }
+
+
+.hover:hover *{
+  color: white;
+}
+
+/* body::-webkit-scrollbar-thumb {
+  margin: 4px 0;
+} */

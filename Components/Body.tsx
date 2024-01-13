@@ -7,8 +7,8 @@ import { ThemeProvider } from "next-themes";
 const Body = () => {
   return (
     <ThemeProvider attribute="class">
-      <div className=" bg-gray-200 dark:bg-[#343541] w-screen md:w-[83vw] h-screen flex items-center justify-center flex-col">
-        <span className="p-2 w-20 h-20 flex items-center justify-center bg-white rounded-full">
+      <div className="chatStyle h-screen">
+        <span className="p-2 w-20 h-20 flex items-center justify-center rounded-full">
           <Image
             src="/Images/chatgpt.svg"
             width={500}
