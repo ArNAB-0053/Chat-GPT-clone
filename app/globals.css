@@ -51,6 +51,10 @@
   .trans {
     @apply transition-all ease-linear duration-[0.3s]
   }
+
+  .logBtn {
+    @apply text-white bg-[#3C46FF] px-20 md:px-12 xl:px-20 py-4 text-sm rounded-md md:w-auto w-[90vw] hover:bg-[#0008ff]
+  }
 }
 
 
@@ -64,4 +68,18 @@
 
 * {
   font-family: sohneSpread, 'Roboto', sans-serif;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(30, end) 1s 1 normal both;
 }

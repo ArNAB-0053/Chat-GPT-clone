@@ -1,15 +1,32 @@
-// Sample array of prompts
-const texts = [
-    "How can I help you today?",
-    "What information are you looking for?",
-    "Ask me about a specific topic, or just say hi!",
-    "Tell me what you're curious about.",
-    "Is there something specific you'd like to discuss?",
-    "Feel free to ask me anything!",
-    "Looking for advice or information? Let me know!",
-    "Start the conversation by telling me your interests.",
-    "Need assistance with a particular subject? Ask away!",
-    "Not sure where to start? I can help guide the conversation."
+export const texts = [
+  "How can I help you today?",
+  "What information are you looking for?",
+  "Ask me about a specific topic, or just say hi!",
+  "Tell me what you're curious about.",
+  "Is there something specific you'd like to discuss?",
+  "Feel free to ask me anything!",
+  "Looking for advice or information? Let me know!",
+  "Start the conversation by telling me your interests.",
+  "Need assistance with a particular subject? Ask away!",
+  "Not sure where to start? I can help guide the conversation.",
 ];
 
-export default texts;
+export const loginTexts = [
+  "Generate creative team-building activities for remote employees.",
+  "Recommend indoor activities for a family of four on a rainy day.",
+  "Help troubleshoot why a linked list appears empty in my code.",
+  "Create a Python script for automating daily reports.",
+  "Suggest a dish to bring to a potluck event.",
+  "Provide ideas to impress a picky eater on a date.",
+  "Draft an email for a professional communication.",
+  "Propose engaging icebreaker activities for a virtual meeting.",
+  "Recommend ways to stay productive while working from home.",
+  "Share tips for organizing and decluttering a workspace.",
+  "Provide advice on creating a captivating presentation.",
+  "Suggest healthy and quick lunch ideas for busy weekdays.",
+  "Offer tips for effective time management during busy days.",
+  "Create a plan for a weekend getaway with friends.",
+  "Propose a fitness routine for beginners.",
+  "Share book recommendations for a relaxing weekend read.",
+  "Provide ideas for a DIY home improvement project.",
+];

@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import { ThemeProvider } from "next-themes";
-import texts from "@/lib/randomQues";
+import {texts} from "@/lib/randomQues";
 
 const Body = () => {
   const [len, setLen] = useState(4);
@@ -11,13 +11,13 @@ const Body = () => {
     getRandomPrompts()
   );
 
-  useEffect(() => {
-    if (window.innerWidth > 768) {
-      setLen(4);
-    } else {
-      setLen(2);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.innerWidth > 768) {
+  //     setLen(4);
+  //   } else {
+  //     setLen(2);
+  //   }
+  // }, []);
 
   function getRandomPrompt() {
     const randomIndex = Math.floor(Math.random() * texts.length);
@@ -44,7 +44,7 @@ const Body = () => {
             width={500}
             height={500}
             alt="ChatGPT"
-            className="aspect-square w-16 h-16 invert dark:invert-0"
+            className="aspect-square w-16 h-16 invert dark:invert-0  "
           />
         </span>
 
