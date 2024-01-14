@@ -90,6 +90,7 @@ const ChatInput = ({ chatId }: Props) => {
           <PaperAirplaneIcon className="w-6 h-6 text-gray-500/50 dark:hover:text-white hover:text-black rotate-[-45deg] hover:rotate-0 trans" />
         </button>
       </form>
+      <p className="text-sm dark:text-gray-500/50 text-gray-600/50  mb-4 mt-3">Made with ❤️ for learning purposes</p>
     </div>
   );
 };

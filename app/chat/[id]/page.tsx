@@ -15,9 +15,9 @@ const ChatPage = ({ params: { id } }: Props) => {
         <h1></h1>
       </div>
       <div className="w-full"><Chat chatId={id} /></div>
-      <div className="fixed bottom-4 flex items-center justify-center flex-col">
+      <div className="fixed bottom-0 flex items-center justify-center flex-col">
         <ChatInput chatId={id} />
-        <p className="text-sm dark:text-gray-500/50 text-gray-600/50 ">Made with ❤️ for learning purposes</p>
+        
       </div>
     </div>
   );
