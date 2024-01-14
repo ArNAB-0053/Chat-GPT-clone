@@ -6,6 +6,7 @@ import { getServerSession } from "next-auth";
 import Login from "@/Components/Login";
 import { authOptions } from "@/pages/api/auth/[...nextauth]";
 import Header from "@/Components/Header";
+import Notify from "@/Components/Notify";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default async function RootLayout({
           ) : (
             <div className="flex items-end justify-end bg-gray-200 dark:bg-[#343541] flex-col ">
               <Header/>
+              <Notify/>
               <div>{children}</div>
             </div>
           )}

@@ -19,7 +19,7 @@ const ChatRow = ({ id }: Props) => {
   const [active, setActive] = useState(false);
 
   const [messages] = useCollection(
-      collection(db, "users", session?.user?.email!, "chats", id, "messages")
+      collection(db, "users", session?.user?.email!, "chats", id, "message")
   );
 
   useEffect(() => {
@@ -41,7 +41,7 @@ const ChatRow = ({ id }: Props) => {
     >
       <span className="flex items-center justify-start gap-2 ">
         <ChatBubbleLeftIcon className={`msgBtn dark:text-gray-400 text-black  w-4 h-4 ${active && 'text-white dark:text-white'}`} />
-        <p className={`msg w-28 overflow-hidden truncate dark:text-gray-400 text-black  ${active && 'text-white dark:text-white'}`}>
+        <p className={`msg w-28 overflow-hidden truncate dark:text-gray-400 text-black text-sm ${active && 'text-white dark:text-white'}`}>
           {messages?.docs[messages?.docs.length - 1]?.data().text || <p>New Chat</p>}
         </p>
       </span>

@@ -21,7 +21,7 @@ const Sidebar = () => {
       )
   );
 
-  const divRef = useRef(null);
+  const divRef:any = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -114,7 +114,7 @@ const Sidebar = () => {
                 className="rounded-full w-8 h-8 "
               />
               <h1
-                className={`${
+                className={` text-sm ${
                   popup ? `text-white` : `dark:text-white text-black`
                 } font-semibold `}
               >
