@@ -25,8 +25,13 @@
   src: url('../public/Font/TestSöhne-Buch.otf');
 }
 
-body, html {
+html {
+  height: -webkit-fill-available;
+}
+
+body {
   height: 100%;
+  height: -webkit-fill-available;
 }
 
 
