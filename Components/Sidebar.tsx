@@ -55,7 +55,7 @@ const Sidebar = () => {
         </div>
 
         <div
-          className={`dark:bg-black bg-transparent h-[7vh] w-full flex items-center justify-center flex-col`}
+          className={`dark:bg-black bg-transparent h-[7vh] w-full flex items-center justify-center flex-col absolute bottom-2 left-0`}
         >
           <div className="flex flex-col items-center justify-center absolute left-2 bottom-[3.8rem] w-[15rem]">
             <div
