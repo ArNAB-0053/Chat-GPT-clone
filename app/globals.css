@@ -25,6 +25,10 @@
   src: url('../public/Font/TestSöhne-Buch.otf');
 }
 
+body, html {
+  height: 100svh;
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Goldman&family=Merriweather:wght@300&family=Montserrat:wght@900&family=Mooli&family=Poppins:wght@900&display=swap');
 

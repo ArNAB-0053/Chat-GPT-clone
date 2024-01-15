@@ -41,7 +41,7 @@ const Sidebar = () => {
     <ThemeProvider attribute="class">
       <div
         id="Sidebar"
-        className="dark:bg-black overflow-hidden bg-[#fff] h-[100svh] w-[16rem] px-2 py-2"
+        className="dark:bg-black  bg-[#fff] h-screen w-[16rem] px-2 py-2"
       >
         <div className="h-[7vh] w-full">
           <NewChat />
