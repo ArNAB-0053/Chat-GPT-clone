@@ -12,7 +12,7 @@ type Props = {
 
 const ChatPage = ({ params: { id } }: Props) => {
   return (
-    <div className="bg-gray-200 dark:bg-[#343541] w-screen md:w-[calc(100vw-16rem)] flex items-center justify-start flex-col min-h-screen px-10 lg:px-36 lg:xl:px-48 xl:2xl:px-80 pt-16 pb-24">
+    <div className="bg-gray-200 dark:bg-[#343541] w-screen md:w-[calc(100vw-16rem)] flex items-center justify-start flex-col min-h-[100svh] px-10 lg:px-36 lg:xl:px-48 xl:2xl:px-80 pt-16 pb-24">
       <div className="w-full dark:bg-[#343541] bg-gray-200 text-center fixed top-0 h-[7vh] flex items-center justify-center">
         <h1></h1>
       </div>

@@ -26,11 +26,14 @@
 }
 
 html {
+  max-height: 100vh;
+  max-height: 100svh;
   height: -webkit-fill-available;
 }
 
 body {
-  height: 100dvh;
+  height: 100vh;
+  height: 100svh;
   height: -webkit-fill-available;
 }
 

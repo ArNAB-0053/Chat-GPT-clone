@@ -7,7 +7,7 @@ import NewQues from "./NewQues";
 const Body = () => {
   return (
     <ThemeProvider attribute="class">
-      <div className="chatStyle h-screen">
+      <div className="chatStyle h-[100svh]">
         <span className="p-2 w-20 h-20 flex items-center justify-center rounded-full dark:bg-white bg-black">
           <Image
             src="/Images/chatgpt.svg"
