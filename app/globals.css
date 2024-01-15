@@ -73,3 +73,10 @@
 #newchat:hover #getques {
   filter: grayscale();
 }
+
+
+/* #scrollToBottomBtn {
+  position: fixed;
+  border: none;
+  cursor: pointer;
+} */

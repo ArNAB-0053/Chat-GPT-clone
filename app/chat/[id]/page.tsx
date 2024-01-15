@@ -1,6 +1,8 @@
+"use client";
 import Chat from "@/Components/Chat";
 import ChatInput from "@/Components/ChatInput";
-import React from "react";
+import ScrollToBottomButton from "@/Components/GotoBottom";
+import React, { useEffect, useRef } from "react";
 
 type Props = {
   params: {
@@ -14,11 +16,13 @@ const ChatPage = ({ params: { id } }: Props) => {
       <div className="w-full dark:bg-[#343541] bg-gray-200 text-center fixed top-0 h-[7vh] flex items-center justify-center">
         <h1></h1>
       </div>
-      <div className="w-full"><Chat chatId={id} /></div>
+      <div className="w-full">
+        <Chat chatId={id} />
+      </div>
       <div className="fixed bottom-0 flex items-center justify-center flex-col">
         <ChatInput chatId={id} />
-        
       </div>
+      <ScrollToBottomButton />
     </div>
   );
 };
